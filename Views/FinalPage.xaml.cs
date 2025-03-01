@@ -1,3 +1,5 @@
+using MAUI_Navigation.Utilities;
+
 namespace MAUI_Navigation.Views;
 
 public partial class FinalPage : ContentPage
@@ -6,6 +8,11 @@ public partial class FinalPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        NavigationUtilities.Examine(Navigation);
+    }
 
     private void Button_Previous_Clicked(object sender, EventArgs e)
     {
