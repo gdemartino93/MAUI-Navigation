@@ -5,6 +5,17 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     Title="InitialPage">
     <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Button Clicked="Button_Clicked" Text="Avanti" />
+        <Label Text="Nome" />
+        <Entry
+            x:Name="txtName"
+            Margin="0,0,0,30"
+            Placeholder="Inserisci il tuo nome" />
+
+        <Label Text="Cognome" />
+        <Entry
+            x:Name="txtLastName"
+            Margin="0,0,0,40"
+            Placeholder="Inserisci il tuo cognome" />
+        <Button Clicked="Button_Clicked" Text="Entra" />
     </VerticalStackLayout>
 </ContentPage>

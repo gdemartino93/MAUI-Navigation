@@ -6,6 +6,7 @@
     Title="HomePage">
     <VerticalStackLayout>
         <Label
+            x:Name="lblWelcome"
             HorizontalOptions="Center"
             Text="Welcome, this is home"
             VerticalOptions="Center" />

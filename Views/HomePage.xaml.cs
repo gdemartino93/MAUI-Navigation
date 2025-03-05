@@ -6,4 +6,9 @@ public partial class HomePage : ContentPage
 	{
 		InitializeComponent();
 	}
+    public HomePage(string name, string lastName)
+    {
+        InitializeComponent();
+        lblWelcome.Text = $"Benvenuto {name} {lastName}";
+    }
 }

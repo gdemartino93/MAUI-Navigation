@@ -18,7 +18,6 @@ public partial class InitialPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushModalAsync(new AgreementPage(), true);
-        //NavigationUtilities.RemovePage(Navigation, this.GetType().Name);
+		Navigation.PushModalAsync(new AgreementPage(txtName.Text, txtLastName.Text), true);
     }
 }
