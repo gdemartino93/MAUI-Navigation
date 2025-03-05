@@ -19,5 +19,21 @@ namespace MAUI_Navigation.Utilities
             Debug.WriteLine("----------------");
             Debug.WriteLine(builder.ToString());
         }
+
+        public static void RemovePage(INavigation navigation, string namePageToRemove)
+        {
+            Page? pageToRemove = navigation.NavigationStack.FirstOrDefault(p => p.GetType().Name == namePageToRemove);
+            if (pageToRemove != null)
+            {
+                navigation.RemovePage(pageToRemove);
+            }
+        }
+
+        public static void AddPage(INavigation navigation, Page pageToInsert, Page pageBefore)
+        {
+            if (pageToInsert == null) return;
+
+            navigation.InsertPageBefore(pageToInsert, pageBefore);
+        }
     }
 }

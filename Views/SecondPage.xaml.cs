@@ -17,7 +17,8 @@ public partial class SecondPage : ContentPage
 
     private void Button_Back_Clicked(object sender, EventArgs e)
     {
-		Navigation.PopAsync();
+        NavigationUtilities.AddPage(Navigation, new HomePage(), this);
+        Navigation.PopAsync();
     }
 
     private void Button_Next_Clicked(object sender, EventArgs e)

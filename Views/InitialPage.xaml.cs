@@ -19,5 +19,6 @@ public partial class InitialPage : ContentPage
     private void Button_Clicked(object sender, EventArgs e)
     {
 		Navigation.PushAsync(new SecondPage());
+        NavigationUtilities.RemovePage(Navigation, this.GetType().Name);
     }
 }
