@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MAUI_Navigation.Views.AgreementPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AgreementPage">
+    <VerticalStackLayout>
+        <Label
+            Margin="0,20,0,20"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            Text="Usando la nostra applicazione accetti le seguenti condizioni:"
+            VerticalOptions="Center" />
+        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel arcu sit amet mi tincidunt gravida. Curabitur gravida finibus erat molestie dapibus. Fusce scelerisque elementum venenatis. Proin mollis, justo vel eleifend consectetur, augue metus pellentesque turpis, consectetur accumsan nibh purus a velit. Nullam tellus purus, dapibus sed ante eget, porttitor eleifend nulla. Nullam nec est orci. Duis lobortis tortor id imperdiet mattis. Ut eleifend elit eget tortor malesuada ullamcorper. In ac semper velit. Proin mi ipsum, dapibus vel tellus eu, venenatis pulvinar leo. Vivamus eu commodo mi, quis consectetur odio. Maecenas id ornarlorem. In posuere convallis libero, sit amet mollis purus vehicula at. Aenean lacus tellus, tincidunt vitae eros non, hendrerit faucibus urna. Nulla facilisi. In ac egestas neque. Duis lacinia consectetur dignissim. Phasellus eget turpis feugiat, efficitur velit a, dictum dolor. Aliquam nec metus pulvinar, ornare nisi eget, ultrices mi. Nulla facilisi. Duis pretium magna sodales felis scelerisque, ac facilisis nisi blandit. Integer lacus nisi, tristique nec diam sed, posuere luctus ex." />
+
+        <Button
+            Margin="0,20,0,0"
+            Clicked="Button_Clicked_Accept"
+            Text="Continua la navigazione"
+            WidthRequest="100" />
+    </VerticalStackLayout>
+</ContentPage>

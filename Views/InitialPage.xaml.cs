@@ -18,7 +18,7 @@ public partial class InitialPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new SecondPage());
-        NavigationUtilities.RemovePage(Navigation, this.GetType().Name);
+		Navigation.PushModalAsync(new AgreementPage(), true);
+        //NavigationUtilities.RemovePage(Navigation, this.GetType().Name);
     }
 }
