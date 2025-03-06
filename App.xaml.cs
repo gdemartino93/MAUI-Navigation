@@ -8,7 +8,11 @@ namespace MAUI_Navigation
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new InitialPage());
+            MainPage = new NavigationPage(new InitialPage())
+            {
+                BarBackgroundColor = Colors.AliceBlue,
+                BarTextColor = Colors.Black
+            };
         }
     }
 }
