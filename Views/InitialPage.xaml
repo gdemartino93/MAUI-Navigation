@@ -7,15 +7,15 @@
     <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="Nome" />
         <Entry
-            x:Name="txtName"
             Margin="0,0,0,30"
-            Placeholder="Inserisci il tuo nome" />
+            Placeholder="Inserisci il tuo nome"
+            Text="{Binding Name}" />
 
         <Label Text="Cognome" />
         <Entry
-            x:Name="txtLastName"
             Margin="0,0,0,40"
-            Placeholder="Inserisci il tuo cognome" />
+            Placeholder="Inserisci il tuo cognome"
+            Text="{Binding LastName}" />
         <Button Clicked="Button_Clicked" Text="Entra" />
     </VerticalStackLayout>
 </ContentPage>
